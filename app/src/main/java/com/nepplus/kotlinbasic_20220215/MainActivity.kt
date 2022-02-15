@@ -39,21 +39,16 @@ class MainActivity : AppCompatActivity() {
 
 
 
-            var myName: String
-            myName = "카카로트"
-
-            myName = "손오반"
-
-            val friendName: String
-            friendName = "베지터"
+            var myName = "카카로트"
+            val friendName = "베지터"
 
             Toast.makeText(this, friendName, Toast.LENGTH_SHORT).show()
             Log.d("MainActivity",myName.toString())
 
-            var myBirthYear: Int
-            myBirthYear = 1991
-            var myHeight: Double
-            myHeight = 168.8
+            var myBirthYear = 1991
+
+            var myHeight = 168.8
+
         }
     }
 }
