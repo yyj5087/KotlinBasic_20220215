@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,9 +25,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnToast.setOnClickListener {
-//            토스트 버튼이 눌리면, Toast를 만들고 (makeText) 보여주기 (show)
-            Toast.makeText(this, "토스트를 띄워봅니다.", Toast.LENGTH_SHORT).show()
-            return@setOnClickListener
+            AlertDialog.Builder(this)
+                .setTitle("확인")
+                .setMessage("토스트 클릭했습니다.")
+                .setPositiveButton("확인"){_,_ -> }
+                .create()
+                .show()
+        }
+        btnVariable.setOnClickListener {
+//            변수에 대한 문법 연습용 코드
+
         }
     }
 }

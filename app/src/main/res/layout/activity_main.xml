@@ -18,5 +18,10 @@
         android:text="토스트 띄워보기"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnVariable"
+        android:text="변수 연습"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
