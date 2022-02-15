@@ -76,6 +76,30 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+        btnCondition2.setOnClickListener {
 
+//            회사 상황
+            val salary = 3600
+            val minutes = 50
+            val overwork = true
+//            취업 조건.
+//            1. 연봉 3000이상 AND 출퇴시간 30분 이내
+
+            if(salary >= 3000 && minutes < 30){
+                Log.d("조건문2", "연봉과, 거리 모두 OK")
+            }
+//            2. 연봉 3500이상 OR 출퇴근시간 10분 이내
+            if (salary >= 3500 || minutes < 10){
+                Log.d("조건문2", "연봉이나 거리 중 하나 Ok")
+            }
+//            3. 야근만 한하면 됨
+            if (!overwork){
+                Log.d("조건문2", "야근을 안해야 OK")
+            }
+//            4. 연봉은 2800이상 AND 출퇴근시간 30분이내 AND 야근도 없어야.
+            if (salary >= 2800 && minutes < 30 && !overwork){
+                Log.d("조건문2","연봉/거리/야근여부 모두 만족.")
+            }
+        }
     }
 }
