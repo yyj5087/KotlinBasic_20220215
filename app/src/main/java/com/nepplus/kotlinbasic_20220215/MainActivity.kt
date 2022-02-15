@@ -19,10 +19,13 @@ class MainActivity : AppCompatActivity() {
 
 //            로그를 찍어보는 기능 실행. => btnLog가 클릭될 때 마다 실행.
             Log.d("MainActivity", "로그 버튼 눌림")
+            Log.d("메인화면", "추가 로그 찍어보기")
+         //   Log.e("메인화면","E로 로드 찍기")  Log.e(에러로그), Log.i(정보용 로그)
         }
 
         btnToast.setOnClickListener {
-            Toast.makeText(this, "토스트 버튼 눌림", Toast.LENGTH_SHORT).show()
+//            토스트 버튼이 눌리면, Toast를 만들고 (makeText) 보여주기 (show)
+            Toast.makeText(this, "토스트를 띄워봅니다.", Toast.LENGTH_SHORT).show()
             return@setOnClickListener
         }
     }
