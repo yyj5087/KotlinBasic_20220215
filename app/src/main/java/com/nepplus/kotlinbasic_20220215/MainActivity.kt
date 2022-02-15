@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        btnLog.setOnClickListener {
+            Log.d("MainActivity", "로그 버튼 눌림")
+        }
     }
 }
