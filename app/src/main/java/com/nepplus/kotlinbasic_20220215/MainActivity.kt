@@ -34,7 +34,26 @@ class MainActivity : AppCompatActivity() {
         }
         btnVariable.setOnClickListener {
 //            변수에 대한 문법 연습용 코드
+//            변수 = variabla -> var
+//            상수 = value - > val
 
+
+
+            var myName: String
+            myName = "카카로트"
+
+            myName = "손오반"
+
+            val friendName: String
+            friendName = "베지터"
+
+            Toast.makeText(this, friendName, Toast.LENGTH_SHORT).show()
+            Log.d("MainActivity",myName.toString())
+
+            var myBirthYear: Int
+            myBirthYear = 1991
+            var myHeight: Double
+            myHeight = 168.8
         }
     }
 }
